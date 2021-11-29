@@ -15,7 +15,7 @@ str= 0.4
 // Define a drawing function
 drawRect = (boxes, classes, scores, imgWidth, imgHeight, ctx) => {
     for (let i = 0; i <= boxes.length; i++) {
-        if (classes[i] === 1 && boxes[i] && scores[i] > 0.44) {
+        if (classes[i] === 1 && boxes[i] && scores[i] > 0.5) {
             const [y, x, height, width] = boxes[i]
             const text = classes[i]
             console.log(labelMap[text]['name'] + ' - ' + Math.round(scores[i] * 100) / 100,);
